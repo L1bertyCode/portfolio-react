@@ -1,9 +1,10 @@
+import { Logo } from "../../../shared/ui/Logo/Logo";
 import s from "./Header.module.scss";
 
 export const Header = () => {
   return (
     <div className={s.header}>
-      <div className={s.logo}>S-ProG</div>
+      <Logo />
       <div>
 
         <nav className={s.nav}>
