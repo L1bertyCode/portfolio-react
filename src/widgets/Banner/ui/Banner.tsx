@@ -9,7 +9,7 @@ export const Banner = () => {
       </h1>
 
       <img
-        src={"http://dummyimage.com/150x60/00dd00"}
+        src="#"
         alt="photo"
         className={s.photo}
       />

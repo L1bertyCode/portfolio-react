@@ -3,7 +3,7 @@ import { Link, LinkProps, To } from "react-router-dom";
 import s from "./AppLink.module.scss";
 import cn from "classnames";
 
-// type AppLinkColorType = "dark" | "light" | "gradient";
+// type AppLinkColorType = "primary" | "secondary" | "accented";
 
 interface AppLinkProps extends Omit<LinkProps, "to"> {
   children: ReactNode;
@@ -14,7 +14,7 @@ interface AppLinkProps extends Omit<LinkProps, "to"> {
 export const AppLink = ({
   children,
   className,
-  // colorType = "light",
+  // colorType = "primary",
   to = "/",
   ...otherProps
 }: AppLinkProps) => {
