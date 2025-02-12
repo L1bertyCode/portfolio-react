@@ -26,6 +26,6 @@ export const AppText = ({ text, colorType = "primary", title, className }: AppTe
     );
   }
   return (
-    <span className={classes}>{text}</span>
+    <div className={classes}>{text}</div>
   );
 };

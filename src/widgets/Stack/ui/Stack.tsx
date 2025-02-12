@@ -1,4 +1,4 @@
-import { AppText } from "../../../shared/ui/AppText/AppText";
+import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Stack.module.scss";
 export const Stack = () => {
   return (
