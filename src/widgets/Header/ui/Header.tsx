@@ -1,19 +1,13 @@
-import { Logo } from "../../../shared/ui/Logo/Logo";
+import { Logo } from "@/shared/ui/Logo/Logo";
 import s from "./Header.module.scss";
+import { Nav } from "@/features/Nav";
 
 export const Header = () => {
   return (
-    <div className={s.header}>
+    <header className={s.header}>
       <Logo />
       <div>
-
-        <nav className={s.nav}>
-          <a href="#" className="link">Home</a>
-          <a href="#" className="link">About</a>
-          <a href="#" className="link">Stack</a>
-          <a href="#" className="link">Projects</a>
-          <a href="#" className="link">Contacts</a>
-        </nav>
+        <Nav />
         <div className={s.socials}>
           <a href="#">gh</a>
           <a href="#">tw</a>
@@ -21,6 +15,6 @@ export const Header = () => {
 
         </div>
       </div>
-    </div>
+    </header>
   );
 };
