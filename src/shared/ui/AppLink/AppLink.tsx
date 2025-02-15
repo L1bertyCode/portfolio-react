@@ -14,7 +14,7 @@ interface AppLinkProps extends Omit<LinkProps, "to"> {
 export const AppLink = ({
   children,
   className,
-  colorType = "secondary",
+  colorType = "primary",
   to = "/",
   ...otherProps
 }: AppLinkProps) => {

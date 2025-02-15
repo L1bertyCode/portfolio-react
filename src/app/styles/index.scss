@@ -1,8 +1,17 @@
+@import url("variabales.scss");
+@import url("theme/light.scss");
+@import url("theme/dark.scss");
+
+
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #9f9f9f;
+  background: #eeeeee;
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  font-weight: 400;
 }
 
 /* :root {

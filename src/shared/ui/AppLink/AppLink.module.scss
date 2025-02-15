@@ -1,3 +1,13 @@
-.secondary {
-  
+.appLink {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+.primary {
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--accented-color);
+  }
 }

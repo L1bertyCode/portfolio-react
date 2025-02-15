@@ -8,7 +8,7 @@ export const Logo = () => {
         height={"22px"}
       >
         <text
-          x="0" y="20px" font-size="24px" font-weight="bold" stroke="black" stroke-width=".5"
+          x="0" y="20px" fontSize="24px" fontWeight="bold" stroke="black" strokeWidth=".5"
           letterSpacing="3.5" fill="none"
         >
           {"<></>"}
