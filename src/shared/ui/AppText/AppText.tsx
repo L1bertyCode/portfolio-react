@@ -7,25 +7,18 @@ interface AppTextProps {
   text: string;
   title?: AppTextTitleVariant;
   colorType?: AppTextColorType;
-};
+}
 
-export const AppText = ({ text, colorType = "primary", title, className }: AppTextProps) => {
-  const classes = cn(
-    s.appText,
-    s[colorType],
-    className
-  );
+export const AppText = ({
+  text,
+  colorType = "primary",
+  title,
+  className,
+}: AppTextProps) => {
+  const classes = cn(s.appText, s[colorType], className);
   if (title) {
     const HeaderTag = title;
-    return (
-      <HeaderTag
-        className={classes}
-      >
-        {text}
-      </HeaderTag>
-    );
+    return <HeaderTag className={classes}>{text}</HeaderTag>;
   }
-  return (
-    <div className={classes}>{text}</div>
-  );
+  return <span className={classes}>{text}</span>;
 };

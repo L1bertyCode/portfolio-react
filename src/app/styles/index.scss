@@ -2,8 +2,6 @@
 @import url("theme/light.scss");
 @import url("theme/dark.scss");
 
-
-
 body {
   margin: 0;
   min-width: 320px;
@@ -12,6 +10,10 @@ body {
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
   font-weight: 400;
+}
+
+section {
+  padding: var(--section-indets) 0;
 }
 
 /* :root {

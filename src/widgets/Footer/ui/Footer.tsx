@@ -1,12 +1,13 @@
 import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Footer.module.scss";
 import { Logo } from "@/shared/ui/Logo/Logo";
+import { Nav } from "@/features/Nav";
 export const Footer = () => {
   return (
     <div className={s.footer}>
       <div>
         <Logo />
-        <div>
+        <div className={s.contacts}>
           <AppText text="+7(999)-999-99-99" />
           <AppText text="libertycodeg@gmail.com" />
 
@@ -19,14 +20,7 @@ export const Footer = () => {
       </div>
       <hr />
       <div>
-
-        <nav className={s.nav}>
-          <a href="#" className="link">Home</a>
-          <a href="#" className="link">About</a>
-          <a href="#" className="link">Stack</a>
-          <a href="#" className="link">Projects</a>
-          <a href="#" className="link">Contacts</a>
-        </nav>
+        <Nav />
         <AppText text="Designed and built by S-ProG MG with Love & Coffee" />
       </div>
     </div>
