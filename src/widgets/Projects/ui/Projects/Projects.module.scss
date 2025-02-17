@@ -1,0 +1,28 @@
+.projects {
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 25px;
+}
+
+.subTitle {
+  margin-bottom: 50px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  min-width: 375px;
+  width: calc(100%/4);
+}
+
+h2,
+h3 {
+  text-align: center;
+}

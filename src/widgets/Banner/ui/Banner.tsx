@@ -1,5 +1,6 @@
 import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Banner.module.scss";
+import photo from "@/shared/assets/photo/p.png";
 export const Banner = () => {
   return (
     <section className={s.banner}>
@@ -13,7 +14,7 @@ export const Banner = () => {
         />
       </div>
 
-      <img src="#" alt="photo" className={s.photo} />
+      <img src={photo} alt="photo" className={s.photo} />
     </section>
   );
 };

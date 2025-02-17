@@ -1,11 +1,41 @@
 :root {
   // Sizes
   --header-height: 100px;
-  --section-indets: 90px;
-  
-  --font-size-m: 18px;
-  --line-height-m: 26px;
-  --font-wieght-m: 400;
+  --section-indets: 50px;
+
+  --font-family-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  --font-size-xs: 14px;
+  --line-height-xs: 22px;
+  --font-xs: var(--font-size-xs) / var(--line-height-xs) var(--font-family-primary);
+
+  --font-size-s: 16px;
+  --line-height-s: 24px;
+  --font-s: var(--font-size-s) / var(--line-height-s) var(--font-family-primary);
+
+  --font-size-m: 20px;
+  --line-height-m: 28px;
+  --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-primary);
+
+  --font-size-l: 28px;
+  --line-height-l: 36px;
+  --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-primary);
+
+  --font-size-xl: 32px;
+  --line-height-xl: 40px;
+  --font-xl: var(--font-size-xl) / var(--line-height-xl) var(--font-family-primary);
+
+  --font-size-2xl: 40px;
+  --line-height-2xl: 48px;
+  --font-2xl: var(--font-size-2xl) / var(--line-height-2xl) var(--font-family-primary);
+
+  --font-size-3xl: 48px;
+  --line-height-3xl: 56px;
+  --font-3xl: var(--font-size-3xl) / var(--line-height-3xl) var(--font-family-primary);
+
+  --font-size-4xl: 56px;
+  --line-height-4xl: 64px;
+  --font-4xl: var(--font-size-4xl) / var(--line-height-4xl) var(--font-family-primary);
 
 
   // @font-face {

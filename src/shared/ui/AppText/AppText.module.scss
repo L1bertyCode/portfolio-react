@@ -5,3 +5,26 @@
 .accented {
   color: var(--accented-color);
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font: var(--font-4xl);
+}
+
+h2 {
+  font: var(--font-3xl);
+}
+
+h3 {
+  font: var(--font-2xl);
+}
+
+h4 {
+  font: var(--font-xl);
+}
