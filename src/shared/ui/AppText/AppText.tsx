@@ -1,7 +1,7 @@
 import s from "./AppText.module.scss";
 import cn from "classnames";
 type AppTextTitleVariant = "h1" | "h2" | "h3" | "h4";
-type AppTextColorType = "primary" | "secodary" | "accented";
+type AppTextColorType = "primary" | "secodary" | "accented"|"gradient";
 
 type XSizeText =
   | "fontXs"
@@ -42,7 +42,7 @@ export const AppText = ({
   const classes = cn(s.appText, s[colorType], s[textSize], className);
   if (title) {
     const HeaderTag = title;
-    return <HeaderTag className={classes}>{text}</HeaderTag>;
+    return <HeaderTag className={`${classes} ${s[title]}`}>{text}</HeaderTag>;
   }
   return <div className={classes}>{text}</div>;
 };

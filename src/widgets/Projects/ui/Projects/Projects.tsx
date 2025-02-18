@@ -41,7 +41,10 @@ export const Projects = () => {
       <div className={s.list}>
         {projects.map((p) =>
           [p, p, p, p, p, p].map((p) => (
-            <ProjectsItem className={s.project} project={p} />
+            <ProjectsItem
+              className={s.project}
+              project={p}
+            />
           ))
         )}
       </div>

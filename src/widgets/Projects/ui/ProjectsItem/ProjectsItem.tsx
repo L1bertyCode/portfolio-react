@@ -16,18 +16,45 @@ export const ProjectsItem = ({
   return (
     <div className={cn(s.projectsItem, className)}>
       {imgSrc ? (
-        <img src={imgSrc} className={s.img} alt="project" />
+        <img
+          src={imgSrc}
+          className={s.img}
+          alt="project"
+        />
       ) : (
-        <img src="#" className={s.img} alt="project" />
+        <img
+          src="#"
+          className={s.img}
+          alt="project"
+        />
       )}
       <div className={s.info}>
-        <AppText className={s.name} text={name} title="h4" />
-        <AppText className={s.description} text={description} />
-        <AppText text="Tech stack :" />
-        <AppText text={techStack.join(", ")} />
-        <div>
-          <AppLink to={livePreview}>Live Preview</AppLink>
-          <AppLink to={viewCode}>View Code</AppLink>
+        <AppText
+          className={s.name}
+          text={name}
+          title="h4"
+        />
+        <AppText
+          className={s.description}
+          text={description}
+        />
+        <div className={s.stackWrapper}>
+          <AppText
+            className={s.stackTitle}
+            text={`${"Tech stack:"}`}
+          />
+          <AppText
+            className={s.stackList}
+            text={techStack.join(", ")}
+          />
+        </div>
+        <div className={s.links}>
+          <AppLink
+          className={s.link}
+           to={livePreview}>Live Preview</AppLink>
+          <AppLink
+          className={s.link}
+           to={viewCode}>View Code</AppLink>
         </div>
       </div>
     </div>

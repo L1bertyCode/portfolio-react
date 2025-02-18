@@ -2,6 +2,7 @@ import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Footer.module.scss";
 import { Logo } from "@/shared/ui/Logo/Logo";
 import { Nav } from "@/features/Nav";
+import { Socials } from "@/features/Socials";
 export const Footer = () => {
   return (
     <div className={s.footer}>
@@ -10,18 +11,30 @@ export const Footer = () => {
         <div className={s.contacts}>
           <AppText text="+7(999)-999-99-99" />
           <AppText text="libertycodeg@gmail.com" />
-
-          <div className={s.socials}>
-            <a href="#">gh</a>
-            <a href="#">tw</a>
-            <a href="#">in</a>
-          </div>
+          <Socials />
         </div>
       </div>
       <hr />
       <div>
         <Nav />
-        <AppText text="Designed and built by S-ProG MG with Love & Coffee" />
+
+        <div className={s.text}>
+          <AppText text="Designed and built by" />
+          <AppText
+            colorType="gradient"
+            text=" S-ProG"
+          />
+          <AppText text="with" />
+          <AppText
+            colorType="gradient"
+            text="Love"
+          />
+          <AppText text="&" />
+          <AppText
+            colorType="gradient"
+            text="Coffee"
+          />
+        </div>
       </div>
     </div>
   );

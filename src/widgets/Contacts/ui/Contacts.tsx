@@ -2,13 +2,17 @@ import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Contacts.module.scss";
 export const Contacts = () => {
   return (
-    <div className={s.contacts}>
-      <AppText text="For any questions please mail me:"
+    <section className={s.contacts}>
+      <AppText
+        colorType="accented"
+        text="For any questions please mail me:"
         title="h2"
       />
-      <AppText text="libertycodeg@gmail.com"
+      <AppText
+        colorType="gradient"
+        text="libertycodeg@gmail.com"
         title="h2"
       />
-    </div>
+    </section>
   );
 };
