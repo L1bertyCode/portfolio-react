@@ -1,7 +1,7 @@
 import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Projects.module.scss";
 import { ProjectsItem } from "../ProjectsItem/ProjectsItem";
-import culcPhoto from "@/shared/assets/culc.png";
+import culcPhoto from "@/shared/assets/projects/culc.png";
 
 export type Project = {
   imgSrc?: string;

@@ -1,12 +1,20 @@
 import { AppText } from "@/shared/ui/AppText/AppText";
 import s from "./Banner.module.scss";
-import photo from "@/shared/assets/photo/p.png";
+import photo from "@/shared/assets/banner/p.png";
 export const Banner = () => {
   return (
     <section className={s.banner}>
       <div>
-        <AppText text="Hi 👋," title="h1" colorType="accented" />
-        <AppText text="I'm S-ProG" title="h1" colorType="accented" />
+        <AppText
+          text="Hi 👋,"
+          title="h1"
+          colorType="accented"
+        />
+        <AppText
+          text="I'm S-ProG"
+          title="h1"
+          colorType="accented"
+        />
         <AppText
           text="I build things for web"
           title="h1"
@@ -14,7 +22,11 @@ export const Banner = () => {
         />
       </div>
 
-      <img src={photo} alt="photo" className={s.photo} />
+      <img
+        src={photo}
+        alt="photo"
+        className={s.photo}
+      />
     </section>
   );
 };
