@@ -1,22 +1,20 @@
-import { ReactNode, SVGProps } from "react";
+import { ElementType, SVGProps } from "react";
 import cn from "classnames";
 import s from "./AppIcon.module.scss";
 interface AppIconProps extends SVGProps<SVGSVGElement> {
-  Svg: ReactNode;
+  SVG: ElementType;
   className?: string;
-};
+}
 export const AppIcon = ({
-  // Svg,
-  className, ...otherProps }: AppIconProps) => {
+  SVG,
+  className,
+
+  ...otherProps
+}: AppIconProps) => {
   return (
-    <svg
+    <SVG
       {...otherProps}
       className={cn(s.appIcon, className)}
-    ></ svg>
-    // <Svg
-    //   {...otherProps}
-    //   className={cn(s.appIcon, className)}>
-    //   <svg />
-    // </Svg>
+    ></SVG>
   );
 };

@@ -1,0 +1,26 @@
+.stack {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 25px;
+}
+
+.subTitle {
+  margin-bottom: 50px;
+}
+
+.stackList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: calc(100% / 6);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
