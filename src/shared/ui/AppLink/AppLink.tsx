@@ -3,14 +3,14 @@ import { Link, LinkProps, To } from "react-router-dom";
 import s from "./AppLink.module.scss";
 import cn from "classnames";
 
-type AppLinkColorType = "primary" | "secondary" | "accented";
+type AppLinkColorType = "primary" | "secondary" | "accented" | "gradient";
 
 interface AppLinkProps extends Omit<LinkProps, "to"> {
   children: ReactNode;
   to?: To;
   colorType?: AppLinkColorType;
   className?: string;
-};
+}
 export const AppLink = ({
   children,
   className,
@@ -22,11 +22,7 @@ export const AppLink = ({
     <Link
       to={to}
       {...otherProps}
-      className={cn(
-        s.appLink,
-        s[colorType],
-        className
-      )}
+      className={cn(s.appLink, s[colorType], className)}
     >
       {children}
     </Link>

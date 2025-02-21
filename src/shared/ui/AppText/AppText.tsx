@@ -1,7 +1,7 @@
 import s from "./AppText.module.scss";
 import cn from "classnames";
 type AppTextTitleVariant = "h1" | "h2" | "h3" | "h4";
-type AppTextColorType = "primary" | "secodary" | "accented"|"gradient";
+type AppTextColorType = "primary" | "secodary" | "accented" | "gradient";
 
 type XSizeText =
   | "fontXs"
@@ -13,12 +13,16 @@ type XSizeText =
   | "font3xl"
   | "font4xl";
 type SizeText = 14 | 16 | 20 | 28 | 32 | 40 | 48 | 56;
+
+type TextAlign = "left" | "center";
+
 interface AppTextProps {
   className?: string;
   text: string;
   title?: AppTextTitleVariant;
   colorType?: AppTextColorType;
   sizeText?: SizeText;
+  textAlign?: TextAlign;
 }
 
 export const AppText = ({
@@ -26,6 +30,7 @@ export const AppText = ({
   colorType = "primary",
   title,
   sizeText = 20,
+  textAlign = "left",
   className,
 }: AppTextProps) => {
   const mapSizeText: Record<SizeText, XSizeText> = {
@@ -39,7 +44,7 @@ export const AppText = ({
     56: "font4xl",
   };
   const textSize = mapSizeText[sizeText];
-  const classes = cn(s.appText, s[colorType], s[textSize], className);
+  const classes = cn(s.appText, s[colorType], s[textSize],s[textAlign], className);
   if (title) {
     const HeaderTag = title;
     return <HeaderTag className={`${classes} ${s[title]}`}>{text}</HeaderTag>;

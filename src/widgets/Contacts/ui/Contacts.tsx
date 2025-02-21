@@ -7,11 +7,13 @@ export const Contacts = () => {
         colorType="accented"
         text="For any questions please mail me:"
         title="h2"
+        textAlign="center"
       />
       <AppText
         colorType="gradient"
         text="libertycodeg@gmail.com"
         title="h2"
+        textAlign="center"
       />
     </section>
   );

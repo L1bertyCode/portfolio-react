@@ -32,20 +32,25 @@ export const Projects = () => {
         text={"Projects"}
         title="h2"
         colorType="accented"
+        textAlign="center"
       />
       <AppText
         className={s.subTitle}
         text={"Things I’ve built so far"}
         title="h3"
+        textAlign="center"
       />
       <div className={s.list}>
         {projects.map((p) =>
-          [p, p, p, p, p, p].map((p) => (
-            <ProjectsItem
-              className={s.project}
-              project={p}
-            />
-          ))
+          [p, p, p, p, p, p].map((p,i) => {
+            return (
+              <ProjectsItem
+                key={i}
+                className={s.project}
+                project={p}
+              />
+            );
+          })
         )}
       </div>
     </section>

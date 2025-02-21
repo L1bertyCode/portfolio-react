@@ -36,18 +36,21 @@ export const Stack = () => {
     <section className={s.stack}>
       <AppText
         className={s.title}
-        text="My Tech Stack"
+        text="Tech Stack"
         title="h2"
         colorType="accented"
+        textAlign="center"
       />
       <AppText
         className={s.subTitle}
         text=" Technologies I’ve been working with recently"
         title="h3"
+        textAlign="center"
       />
       <div className={s.stackList}>
         {stackList.map((sItem) => (
           <AppIcon
+            key={sItem}
             className={s.item}
             SVG={sItem as ElementType}
           />

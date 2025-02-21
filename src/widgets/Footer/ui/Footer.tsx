@@ -9,7 +9,7 @@ export const Footer = () => {
       <div>
         <Logo />
         <div className={s.contacts}>
-          <AppText text="+7(999)-999-99-99" />
+          <AppText text="+7(911)-883-17-85" />
           <AppText text="libertycodeg@gmail.com" />
           <Socials />
         </div>

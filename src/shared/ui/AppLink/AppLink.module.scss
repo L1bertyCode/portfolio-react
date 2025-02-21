@@ -11,3 +11,9 @@
     color: var(--accented-color);
   }
 }
+
+.gradient {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--=--text-gradient);
+}
