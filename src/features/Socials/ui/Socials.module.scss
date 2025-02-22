@@ -4,5 +4,15 @@
 }
 
 .fill {
-  fill: #666666
+  fill: #666666;
+  transition: transform linear 0.3s;
+}
+
+.fill:hover {
+  transition: transform linear 0.3s;
+  transform: scale(1.1);
+}
+
+@media(max-width:992px) {
+  
 }

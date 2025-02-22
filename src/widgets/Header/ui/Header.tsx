@@ -8,9 +8,12 @@ export const Header = () => {
     <header className={s.header}>
       <Logo />
       <div>
-        <Nav />
+        <Nav className={s.nav} />
         <Socials />
       </div>
+      <span className={s.burgerWrapper}>
+        <span className={s.burger}></span>
+      </span>
     </header>
   );
 };
